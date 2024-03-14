@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Register</title>
+</head>
+<script src="../js/display.js" defer></script>
+<script src="../js/validate.js" defer></script>
+<script src="../js/register.js"></script>
+<body>
+  <div id="api-result"></div>
+  <form id="register-form">
+    <label>Username
+      <input
+        type="text"
+        name="username"
+      >
+    </label>
+    <label>Password
+      <input
+        type="password"
+        name="password"
+      >
+    </label>
+    <label>Confirm Password
+      <input
+        type="password"
+        name="password_confirm"
+      >
+    </label>
+    <button type="submit">Register</button>
+  </form>
+  <a href="/login">Login</a>
+  <noscript>
+    <p>You must enable javascript to register on this website.</p>
+    <p>JS is used to retrieve the registration CAPTCHA.</p>
+  </noscript>
+</body>
+</html>

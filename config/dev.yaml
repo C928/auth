@@ -1,0 +1,18 @@
+application_host: 127.0.0.1
+application_port: 8443
+postgres:
+  url: "postgres://postgres:password@localhost:5432/test"
+redis:
+  url: "redis://127.0.0.1:6379"
+  password: "password"
+#smtp:
+#  url: ""
+task1_email_confirm:
+  # time after which email confirmation fields will be removed from redis (10 minutes)
+  expiry_time: 600
+  # number of fields removed per redis hdel call (improve performances)
+  deletion_bulk_count: 100
+task1_captcha:
+  # time after which captcha answers will be removed from redis (20 minutes)
+  expiry_time: 1200
+  deletion_bulk_count: 200

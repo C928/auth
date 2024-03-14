@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Login</title>
+</head>
+<script src="../js/display.js" defer></script>
+<script src="../js/validate.js" defer></script>
+<script src="../js/login.js"></script>
+<body>
+  <div id="api-result"></div>
+  <button id="cancel-delete-btn" type="button" style="display: none;">Cancel Account Deletion</button>
+  <form id="login-form">
+    <label>Email
+      <input
+        type="email"
+        name="email"
+      >
+    </label>
+    <label>Password
+      <input
+        type="password"
+        name="password"
+      >
+    </label>
+    <button type="submit">Login</button>
+  </form>
+  <a href="/reset-password/request">Forgot password?</a>
+  <a href="/register/request">Register</a>
+  <noscript>
+    <p>You must enable javascript to use this website.</p>
+  </noscript>
+</body>
+</html>

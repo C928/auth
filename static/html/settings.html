@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Settings</title>
+</head>
+<script src="../js/display.js" defer></script>
+<script src="../js/validate.js" defer></script>
+<script src="../js/delete_account.js" defer></script>
+<script src="../js/settings.js"></script>
+<body>
+  <a href="/home">Home</a>
+  <p id="data-display"></p>
+
+  <div id="api-result"></div>
+  <form id="update-form">
+    <label>Email
+      <input
+        id="new-email"
+        type="email"
+        name="new_email"
+      >
+    </label>
+    <label>Username
+      <input
+        id="new-username"
+        type="text"
+        name="new_username"
+      >
+    </label>
+    <label>Change Password
+      <input
+        id="new-password"
+        autocomplete="new-password"
+        type="password"
+        name="new_password"
+      >
+    </label>
+    <label>Change Password Confirm
+      <input
+        id="new-password-confirm"
+        autocomplete="new-password"
+        type="password"
+        name="new_password_confirm"
+      >
+    </label>
+    <label>Current Password
+      <input
+        id="update-form-password"
+        type="password"
+        name="password"
+      >
+    </label>
+    <label>Write "Update my account." to confirm the operation
+      <input
+        id="update-form-confirm-sentence"
+        type="text"
+        name="confirmation_sentence"
+      >
+    </label>
+    <button type="submit">Update Account</button>
+  </form>
+  <form id="delete-form">
+    <label>Password
+      <input
+          id="delete-form-password"
+          type="password"
+          name="password"
+      >
+    </label>
+    <label>Write "Delete my account." to confirm the operation
+      <input
+          id="delete-confirm-sentence"
+          type="text"
+          name="confirmation_sentence"
+      >
+    </label>
+    <button type="submit">Delete Account</button>
+  </form>
+  <noscript>
+    <p>You must enable javascript to use this website.</p>
+  </noscript>
+</body>
+</html>

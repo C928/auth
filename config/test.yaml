@@ -1,0 +1,13 @@
+application_host: 127.0.0.1
+application_port: 8443
+postgres:
+  url: "postgres://postgres:password@localhost:5432/test"
+redis:
+  url: "redis://127.0.0.1:6379"
+  password: "password"
+task1_email_confirm:
+  expiry_time: 1
+  deletion_bulk_count: 500
+task1_captcha:
+  expiry_time: 1
+  deletion_bulk_count: 500
